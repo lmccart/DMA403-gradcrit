@@ -658,6 +658,7 @@ class GitRepo {
 	 * @return string
 	 */
 	public function pull($remote = "", $branch = "") {
+		echo '<br>remote='.$remote.' branch='.$branch;
 		return $this->run("pull $remote $branch");
 	}
 
