@@ -6,7 +6,7 @@
 require_once('Git.php');
 
 echo 'pulling latest';
-$repo = Git::open('https://github.com/lmccart/DMA403-gradcrit.git'); 
+$repo = Git::open('./'); 
 $repo->pull('origin', 'master');
 
 ?>
